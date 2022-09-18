@@ -124,7 +124,6 @@ public class ArbreBinaireAvecOptional<T extends Comparable<T>> {
 			resultat.append(sousArbreDroit.representation(decalage + "  "));
 		}
 		System.Out.Println("je suis amine, hey wafa) ; 
-                System.Out.Println("je suis amine) ; 
 		return resultat;
 	}
 	
