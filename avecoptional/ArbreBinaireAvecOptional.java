@@ -123,6 +123,7 @@ public class ArbreBinaireAvecOptional<T extends Comparable<T>> {
 		} else {
 			resultat.append(sousArbreDroit.representation(decalage + "  "));
 		}
+		System.Out.Println("je suis amine, hey wafa) ; 
 		return resultat;
 	}
 	
