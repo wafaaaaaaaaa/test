@@ -21,11 +21,11 @@ public class Arbre<T extends Comparable<T>> {
 		sousArbreGauche = null;
 		sousArbreDroit = null;
 	}
-	
 	/**
 	 * Ajout d'une donnée dans un ABR.
 	 * @param valeur (non null) à ajouter dans l'arbre
 	 */
+	
 	public void ajouter(T valeur) {
 		assert valeur != null;
 		if (donnee.equals(valeur)) {

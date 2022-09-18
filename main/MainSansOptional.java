@@ -5,28 +5,28 @@ import sansoptional.Arbre;
 public class MainSansOptional {
 
 	public static void main(String[] args) {
-		Arbre<Integer> arbre = new Arbre(12);
+		Arbre<String> arbre = new Arbre("n");
 		System.out.println(arbre);
 		System.out.println(arbre.nombreFeuilles());
-		arbre.ajouter(6);
+		arbre.ajouter("a");
 		System.out.println(arbre);
 		System.out.println(arbre.nombreFeuilles());
-		arbre.ajouter(6);
+		arbre.ajouter("d");
 		System.out.println(arbre);
 		System.out.println(arbre.nombreFeuilles());
-		arbre.ajouter(8);
+		arbre.ajouter("r");
 		System.out.println(arbre);
 		System.out.println(arbre.nombreFeuilles());
-		arbre.ajouter(16);
+		arbre.ajouter("b");
 		System.out.println(arbre);
 		System.out.println(arbre.nombreFeuilles());
-		arbre.ajouter(20);
+		arbre.ajouter("k");
 		System.out.println(arbre);
 		System.out.println(arbre.nombreFeuilles());
-		System.out.println(arbre.existe(20));
-		System.out.println(arbre.existe(22));
-		System.out.println(arbre.existe(4));
-		System.out.println(arbre.existe(6));
+		System.out.println(arbre.existe("a"));
+		System.out.println(arbre.existe("o"));
+		System.out.println(arbre.existe("n"));
+		System.out.println(arbre.existe("k"));
 	}
 
 }

@@ -20,12 +20,19 @@ public class ArbreBinaireAvecOptional<T extends Comparable<T>> {
 	public ArbreBinaireAvecOptional(T valeur) {
 		assert valeur != null;
 		valeur=donnee;
-		Optional<T> value = Optional.of(valeur);
-	    sousArbreGauche = null;
+		if(sousArbreGauche.isPresent()) {
+			sousArbreGauche= Optional.of(null);
+		}else {
+			Optional.empty();
+		}
+		if(sousArbreGauche.isPresent()) {
+			sousArbreGauche= Optional.of(null);
+		}else {
+			Optional.empty();
+		}
+		if(sousArbreDroit.)
 	    sousArbreDroit = null;
-	    Optional<Optional<ArbreBinaireAvecOptional<T>>> op1= Optional.ofNullable(sousArbreDroit);
-	    Optional<Optional<ArbreBinaireAvecOptional<T>>> op2= Optional.ofNullable(sousArbreGauche);
-
+	    
 	}
 	
 	
@@ -35,27 +42,15 @@ public class ArbreBinaireAvecOptional<T extends Comparable<T>> {
 	 */
 	public void ajouter(T valeur) {
 		assert valeur != null;
-		assert valeur != null;
-		if (donnee.equals(valeur)) {
-			return;
-		}
-		if (valeur.compareTo(donnee) < 0) {
-			if (sousArbreGauche != null) {
-				sousArbreGauche.ajouter(valeur);
-			}
-			else {
-				sousArbreGauche = new Arbre(valeur);
-			}
-		}
-		else {
-			if (sousArbreDroit != null) {
-				sousArbreDroit.ajouter(valeur);
-			}
-			else {
-				sousArbreDroit = new Arbre(valeur);
-			}	
-		}
-	}
+		if(donnee.equals(valeur)) return ;
+		if(valeur.compareTo(donnee)<0) {
+			
+			if(sousArbreGauche.ifPresent(sousArbreGauche)); { ajouter(valeur);}
+			
+		
+		
+		
+	} 
 	
 	
 	/**
